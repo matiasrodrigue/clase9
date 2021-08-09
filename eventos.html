@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer app libros</title>
+</head>
+<body>
+
+
+    <h2>MercadoLibro</h2>
+    <button id="btnPrincipal">Tocar aqui</button><br>
+    <button id="btnMain">Pulsa Aqui</button><br>
+
+    <!-- <input id = "nombre" type = "text"><br> 
+    <input id = "edad" type = "number"><br>  -->
+
+    <form id= "formulario">
+        <input type ="text">
+        <input type ="number"><br>
+        <input type ="submit" value="Enviar">
+        
+    </form>
+
+
+
+    <script>
+
+        let boton =document.getElementById("btnPrincipal")
+        boton.addEventListener("click", respuestaClick)
+        
+        function respuestaClick(){
+        
+            console.log("respuestas evento");
+            alert("escoge tu libro");
+        }
+     
+    </script>
+
+<script src="eventos.js"></script>
+</body>
+</html>
